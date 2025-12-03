@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты | Портфолио</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <i class="fas fa-code"></i>
+                <span class="header__name">Ооржак Хабиб Орланович</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav__link">Главная</a>
+                <a href="projects.html" class="nav__link nav__link--active">Проекты</a>
+                <a href="diary.html" class="nav__link">Дневник</a>
+                <a href="contacts.html" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="projects-page">
+            <div class="container">
+                <h1 class="section-title">Мои проекты</h1>
+                <div class="projects-page__filters">
+                    <button class="filter-btn filter-btn--active">Все</button>
+                    <button class="filter-btn">HTML</button>
+                    <button class="filter-btn">JavaScript</button>
+                    <button class="filter-btn">React</button>
+                </div>
+                <div class="projects-page__grid">
+                    <div class="project-card-large" data-category="html">
+                        <div class="project-card-large__image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-card-large__content">
+                            <h3 class="project-card-large__title">Личный сайт</h3>
+                            <p class="project-card-large__tech">HTML, CSS</p>
+                            <p class="project-card-large__desc">Полностью адаптивный лендинг с использованием Flexbox и Grid.</p>
+                            <button class="btn btn--outline" data-project="1">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="project-card-large" data-category="js">
+                        <div class="project-card-large__image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-card-large__content">
+                            <h3 class="project-card-large__title">Todo-приложение</h3>
+                            <p class="project-card-large__tech">JavaScript</p>
+                            <p class="project-card-large__desc">Приложение для управления задачами с сохранением в LocalStorage.</p>
+                            <button class="btn btn--outline" data-project="2">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="project-card-large" data-category="react">
+                        <div class="project-card-large__image">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="project-card-large__content">
+                            <h3 class="project-card-large__title">Интернет-магазин</h3>
+                            <p class="project-card-large__tech">React</p>
+                            <p class="project-card-large__desc">SPA с корзиной товаров, фильтрацией и mock API.</p>
+                            <button class="btn btn--outline" data-project="3">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="project-card-large" data-category="bootstrap">
+                        <div class="project-card-large__image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-card-large__content">
+                            <h3 class="project-card-large__title">Портфолио на Bootstrap</h3>
+                            <p class="project-card-large__tech">Bootstrap</p>
+                            <p class="project-card-large__desc">Адаптивное портфолио с использованием Bootstrap 5.</p>
+                            <button class="btn btn--outline" data-project="4">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 Портфолио студента. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="projectModal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2 class="modal__title" id="modalTitle"></h2>
+            <div class="modal__body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="../scripts/projects.js"></script>
+</body>
+</html>

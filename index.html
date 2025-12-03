@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | Портфолио</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <i class="fas fa-code"></i>
+                <span class="header__name">Ооржак Хабиб Орланович</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link nav__link--active">Главная</a>
+                <a href="pages/projects.html" class="nav__link">Проекты</a>
+                <a href="pages/diary.html" class="nav__link">Дневник</a>
+                <a href="pages/contacts.html" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__text">
+                    <h1 class="hero__title">Привет! Я студент группы ЭФБО-14-24</h1>
+                    <div class="hero__image">
+                        <img src="images/student.jpg" alt="Фото студента">
+                    </div>
+                    <p class="hero__subtitle">Увлекаюсь веб-разработкой</p>
+                    <a href="assets/resume.pdf" download class="btn btn--primary">
+                        <i class="fas fa-download"></i> Скачать резюме
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills__list">
+                    <div class="skill">
+                        <span class="skill__name">HTML/CSS</span>
+                        <div class="skill__bar">
+                            <div class="skill__progress skill__progress--90"></div>
+                        </div>
+                        <span class="skill__percent">90%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill__name">JavaScript</span>
+                        <div class="skill__bar">
+                            <div class="skill__progress skill__progress--80"></div>
+                        </div>
+                        <span class="skill__percent">80%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill__name">Bootstrap</span>
+                        <div class="skill__bar">
+                            <div class="skill__progress skill__progress--85"></div>
+                        </div>
+                        <span class="skill__percent">85%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill__name">React</span>
+                        <div class="skill__bar">
+                            <div class="skill__progress skill__progress--60"></div>
+                        </div>
+                        <span class="skill__percent">60%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2 class="section-title">Лучшие проекты</h2>
+                <div class="projects__list">
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="project-card__title">Личный сайт</h3>
+                        <p class="project-card__desc">HTML, CSS, адаптивный дизайн</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3 class="project-card__title">Todo-приложение</h3>
+                        <p class="project-card__desc">JavaScript, LocalStorage</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3 class="project-card__title">Интернет-магазин</h3>
+                        <p class="project-card__desc">React,Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 Портфолио студента. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

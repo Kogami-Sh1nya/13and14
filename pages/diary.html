@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник | Портфолио</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <i class="fas fa-code"></i>
+                <span class="header__name">Ооржак Хабиб Орланович</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav__link">Главная</a>
+                <a href="projects.html" class="nav__link">Проекты</a>
+                <a href="diary.html" class="nav__link nav__link--active">Дневник</a>
+                <a href="contacts.html" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="diary">
+            <div class="container">
+                <h1 class="section-title">Мой учебный прогресс</h1>
+                <div class="diary__content">
+                    <div class="diary__entries">
+                        <h2 class="diary__subtitle">Записи</h2>
+                        <ul class="entries-list">
+                            <li class="entries-list__item entries-list__item--completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="entries-list__date">15 дек</span>
+                                <span class="entries-list__text">Верстка макета сайта</span>
+                            </li>
+                            <li class="entries-list__item entries-list__item--completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="entries-list__date">10 дек</span>
+                                <span class="entries-list__text">JavaScript основы</span>
+                            </li>
+                            <li class="entries-list__item entries-list__item--in-progress">
+                                <i class="fas fa-spinner"></i>
+                                <span class="entries-list__date">05 дек</span>
+                                <span class="entries-list__text">Работа с формами</span>
+                            </li>
+                            <li class="entries-list__item entries-list__item--in-progress">
+                                <i class="fas fa-spinner"></i>
+                                <span class="entries-list__date">01 дек</span>
+                                <span class="entries-list__text">Адаптивный дизайн</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn--primary">
+                            <i class="fas fa-plus"></i> Добавить запись
+                        </button>
+                    </div>
+                    <div class="diary__courses">
+                        <h2 class="diary__subtitle">Текущие курсы</h2>
+                        <div class="course">
+                            <span class="course__name">Веб-разработка</span>
+                            <div class="course__progress-bar">
+                                <div class="course__progress course__progress--90"></div>
+                            </div>
+                            <span class="course__percent">90%</span>
+                        </div>
+                        <div class="course">
+                            <span class="course__name">JavaScript</span>
+                            <div class="course__progress-bar">
+                                <div class="course__progress course__progress--70"></div>
+                            </div>
+                            <span class="course__percent">70%</span>
+                        </div>
+                        <div class="course">
+                            <span class="course__name">React</span>
+                            <div class="course__progress-bar">
+                                <div class="course__progress course__progress--50"></div>
+                            </div>
+                            <span class="course__percent">50%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br><br><br>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 Портфолио студента. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/diary.js"></script>
+</body>
+</html>
